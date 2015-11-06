@@ -1,0 +1,13 @@
+<h1 class="text-center">
+  Todo List
+</h1>
+<div class="text-center">
+  <%= link_to 'New Item', new_todo_path, remote: true %>
+</div>
+<div class="text-center">
+  <div id="form" class="hidden"></div>
+</div>
+
+<div class="text-center" id="items">
+  <%= render @todos %>
+</div>
